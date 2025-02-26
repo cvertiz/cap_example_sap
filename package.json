@@ -17,12 +17,16 @@
     "@sap/cds-dk": "^8"
   },
   "scripts": {
-    "start": "cds-serve"
+    "start": "cds-serve",
+    "watch-iteraction_items": "cds watch --open iteraction_items/webapp/index.html?sap-ui-xx-viewCache=false"
   },
   "cds": {
     "requires": {
       "auth": "mocked",
       "db": "hana"
     }
-  }
+  },
+  "sapux": [
+    "app/iteraction_items"
+  ]
 }
